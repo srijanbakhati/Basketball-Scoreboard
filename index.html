@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1 class="heading">Basketball Scoreboard</h1>
+    <div id="container">
+        <div id="home-score">
+            <div class="home-background">
+            <h2 class="primary-heading">HOME</h2>
+        </div>
+        <div class="home-score-background">
+            <h2 id="home-score-el">0</h2>
+        </div>
+        <button class="btn"onclick="freeRangePointsHome()">+1</button>
+        <button class="btn"onclick="midRangePointsHome()">+2</button>
+        <button class="btn"onclick="longRangePointsHome()">+3</button>
+        </div>
+        <div id="guest-score">
+            <div class="guest-background">
+                <h2 class="primary-heading">GUEST</h2>
+            </div>
+            <div class="guest-score-background">
+                <h2 id="guest-score-el">0</h2>
+            </div>
+            <button class="btn"onclick="freeRangePointsGuest()">+1</button>
+        <button class="btn"onclick="midRangePointsGuest()">+2</button>
+        <button class="btn"onclick="longRangePointsGuest()">+3</button>
+        </div>
+    </div>
+    <div id="end">
+        <button id="save" onclick="finishGame()">FINISH</button>
+        <button id="reset"onclick="resetGame()">RESET</button>
+    </div>
+    <footer>
+      <p id="conclusion"></p>
+    </footer>
+    
+</body>
+</html>
